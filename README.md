@@ -1,7 +1,7 @@
 # Fork of [@uberhalit](https://github.com/uberhalit)'s [EldenRingFpsUnlockAndMore](https://github.com/uberhalit/EldenRingFpsUnlockAndMore/tree/main)
 
 ## Why?
-I'm running 2 instances of Elden Ring twice on a single computer using ASTER Multiseat. I would like each of them to have their own patches applied, with separate settings. However, the original app fails [when it finds multiple processes](https://github.com/uberhalit/EldenRingFpsUnlockAndMore/blob/1c0104c6229b207ec09e13cb90951831413d4eab/EldenRingFPSUnlockAndMore/MainWindow.xaml.cs#L330). This fork simply filters out processes that don't belong to the current user, so each user can run their own patcher.
+I'm running 2 instances of Elden Ring using ASTER Multiseat - on a single computer but separate Windows users. I would like each of them to be patched with separate settings. However, the original app fails [when it finds multiple game processes](https://github.com/uberhalit/EldenRingFpsUnlockAndMore/blob/1c0104c6229b207ec09e13cb90951831413d4eab/EldenRingFPSUnlockAndMore/MainWindow.xaml.cs#L330). This fork simply filters out processes that don't belong to the current user, so each user can run their own patcher (that patches their own game).
 
 </br></br>
 
