@@ -326,13 +326,14 @@ namespace EldenRingFPSUnlockAndMore
         private async Task<bool> OpenGame(bool retry = false)
         {
             UpdateStatus("accessing game...", Brushes.Orange);
-            Process[] procList = Process.GetProcessesByName(Properties.Settings.Default.GameName);
-            if (procList.Length != 1)
+            int currentSessionID = Process.GetCurrentProcess().SessionId;
+            HashSet<Process> procList = Process.GetProcessesByName(Properties.Settings.Default.GameName).Where(t => t.SessionId == currentSessionID).ToHashSet();
+            if (procList.Count != 1)
             {
                 MessageBox.Show("Couldn't find the game! Start the game without EAC manually.", "Elden Ring FPS Unlocker and more", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 return false;
             }
-            _gameProc = procList[0];
+            _gameProc = procList.First();
 
             // open game
             _gameHwnd = _gameProc.MainWindowHandle;
