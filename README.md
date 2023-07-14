@@ -1,3 +1,12 @@
+# Fork of [@uberhalit](https://github.com/uberhalit)'s [EldenRingFpsUnlockAndMore](https://github.com/uberhalit/EldenRingFpsUnlockAndMore/tree/main)
+
+## Why?
+I'm running 2 instances of Elden Ring twice on a single computer, using ASTER Multiseat. I would like each of them to have their own patcher, with separate settings. However, the original fails [when it finds multiple instances](https://github.com/uberhalit/EldenRingFpsUnlockAndMore/blob/1c0104c6229b207ec09e13cb90951831413d4eab/EldenRingFPSUnlockAndMore/MainWindow.xaml.cs#L330) of the exe. This fork aims to fix this. 
+
+</br></br>
+
+_<details><summary>Original README</summary>_
+
 # Elden Ring FPS Unlocker and more
 A small utility to remove frame rate limit, change FOV (Field of View), add widescreen supprt, alter Game Speed and various game modifications for [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring) written in C#. More features soon!
 Patches games memory while running, does not modify any game files. Works with every game version (legit steam & oh-not-so-legit), should work with all future updates.
@@ -170,3 +179,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   * added icon
 * v0.0.0.1-beta (2022-02-25)
   * Initial release
+</details>
